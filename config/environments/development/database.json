@@ -1,0 +1,29 @@
+{
+  "defaultConnection": "MongoDB",
+  "connections": {
+    "default": {
+      "connector": "strapi-hook-bookshelf",
+      "settings": {
+        "client": "sqlite",
+        "filename": ".tmp/data.db"
+      },
+      "options": {
+        "useNullAsDefault": true
+      }
+    },
+    "MongoDB": {
+      "connector": "strapi-hook-mongoose",
+      "settings": {
+        "client": "mongo",
+        "host": "cantatapetram-iekmi.mongodb.net",
+        "port": 27017,
+        "database": "CantataPetram",
+        "username": "admin",
+        "password": "admin123"
+      },
+      "options": {
+        "ssl": true
+      }
+    }
+  }
+}

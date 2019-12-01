@@ -1,0 +1,30 @@
+{
+  "connection": "default",
+  "collectionName": "specimen",
+  "info": {
+    "name": "specimen",
+    "description": "Tutaj znajdują się wszystkie okazy kamieni wyświetlane na stronie"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "family": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/specimen",
+      "handler": "Specimen.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/specimen/count",
+      "handler": "Specimen.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/specimen/:id",
+      "handler": "Specimen.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/specimen",
+      "handler": "Specimen.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/specimen/:id",
+      "handler": "Specimen.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/specimen/:id",
+      "handler": "Specimen.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

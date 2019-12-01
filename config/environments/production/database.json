@@ -1,0 +1,31 @@
+{
+  "defaultConnection": "default",
+  "connections": {
+    "default": {
+      "connector": "strapi-hook-bookshelf",
+      "settings": {
+        "client": "sqlite",
+        "host": "${process.env.DATABASE_HOST || '127.0.0.1'}",
+        "port": "${process.env.DATABASE_PORT || 27017}",
+        "database": "${process.env.DATABASE_NAME || 'strapi'}",
+        "username": "${process.env.DATABASE_USERNAME || ''}",
+        "password": "${process.env.DATABASE_PASSWORD || ''}"
+      },
+      "options": {}
+    },
+    "MongoDB": {
+      "connector": "strapi-hook-mongoose",
+      "settings": {
+        "client": "mongo",
+        "host": "cantatapetram-iekmi.mongodb.net",
+        "port": 27017,
+        "database": "CantataPetram",
+        "username": "admin",
+        "password": "Admin123!"
+      },
+      "options": {
+        "ssl": true
+      }
+    }
+  }
+}
