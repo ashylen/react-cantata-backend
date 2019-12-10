@@ -23,10 +23,13 @@
       "via": "related",
       "plugin": "upload"
     },
-    "main_image": {
+    "image": {
       "model": "file",
       "via": "related",
       "plugin": "upload"
+    },
+    "short_description": {
+      "type": "string"
     }
   }
 }

@@ -1,0 +1,31 @@
+{
+  "connection": "default",
+  "collectionName": "dictionaries",
+  "info": {
+    "name": "dictionary",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "keyword": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "short_text": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "hover_text": {
+      "type": "string"
+    }
+  }
+}
