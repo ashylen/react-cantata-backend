@@ -1,3 +1,2 @@
-# cms
+# React Cantata - Strapi backend
 
-A quick description of cms.
