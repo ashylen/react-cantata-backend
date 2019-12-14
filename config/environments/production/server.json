@@ -1,5 +1,5 @@
 {
-  "host": "localhost",
+  "host": "https://api2.ptig.pl",
   "port": "${process.env.PORT || 1337}",
   "production": true,
   "proxy": {
